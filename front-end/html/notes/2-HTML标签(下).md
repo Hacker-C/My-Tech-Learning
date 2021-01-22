@@ -180,7 +180,7 @@
 - `input` 标签为单标签
 - `type` 属性设置不同属性值来指定不同控件类型
 
-<font color=red size=4>type 常用属性值</font>
+<font color=red size=5>type 常用属性值</font>
 
 | 属性值   | 描述                                                 |
 | -------- | ---------------------------------------------------- |
@@ -195,7 +195,7 @@
 | submit   | 定义提交按钮。重置按钮会清除表单所有数据。           |
 | text     | 定义输入字段。用户可输入文本，默认宽度为 20 个字符。 |
 
-<font color=red size=4>input 的其他属性</font>
+<font color=red size=5>input 的其他属性</font>
 
 | 属性      | 属性值  | 描述                                  |
 | --------- | ------- | ------------------------------------- |
@@ -204,7 +204,7 @@
 | checked   | checked | 规定此 input 元素首次加载时应当被选中 |
 | maxlength | 正整数  | 规定输入字段字符的最大长度            |
 
-**注意：**
+<font color=red size=5>注意</font>
 
 1. 对于 `radio` 单选框，必须使 `input` 的 `name` 具有相同的属性值，才能实现多选一。
    同理，复选框也要有相同的`name`值。
@@ -224,3 +224,37 @@
 
 **核心：**
 `<lable>`标签的 for 属性与相关元素的 id 属性相同。
+
+### 3.4.3 select 下拉表单元素
+
+`select` 标签设置多个选项让用户选择，节约页面空间。
+**语法**
+
+```HTML
+<select>
+    <option>选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+</select>
+```
+
+**注意**
+
+1. select 中至少包含一对 option。
+2. 在 option 中定义属性`selected=selected`，当前项即为默认选项。
+
+### 3.4.4 textarea 文本域表单元素
+
+场景：输入内容较多时。
+
+**语法：**
+
+```html
+<textarea rows="3" cols="20">
+    文本内容
+</textarea>
+```
+
+**注意**
+
+1. cols="每行字符数"，rows="显示的行数"
