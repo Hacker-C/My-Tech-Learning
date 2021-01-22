@@ -18,6 +18,16 @@
   + 三大特性：封装、继承、多态
 + 健壮性
 + 跨平台性
+  + 原理：JVM
+  + jvm
+    + win版jvm
+    + linux版jvm
+    + mac版jvm
+
+## Java两种核心机制
+
++ Java 虚拟机
++ 垃圾收集机制
 
 ## Java 语言开发环境
 
