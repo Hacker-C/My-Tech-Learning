@@ -1,4 +1,25 @@
-# Java 语言开发环境
+## Java概述
+
++ Java SE（标准版）√
++ Java EE（企业版）√
++ Java ME（小型版）
++ Java Card
+
+## Java应用
+
++ 企业级应用
++ Android平台应用
++ 大数据平台开发
+
+## Java语言特性
+
++ 面向对象
+  + 两个基本概念：类和对象
+  + 三大特性：封装、继承、多态
++ 健壮性
++ 跨平台性
+
+## Java 语言开发环境
 
 1.1 JDK JRE JVM
 
@@ -27,7 +48,7 @@
 
 IDE：eclipse、IDEA
 
-# Java注释
+## Java注释
 
 > 1. 单行和多行注释，注释的内容不参与编译，生成的 `.class` 字节码文件中不包含注释掉的信息。
 > 2. 多行注释不可嵌套使用。
@@ -63,7 +84,7 @@ IDE：eclipse、IDEA
   
   
 
-# Java初识
+## Java初识
 
 ```java
 public class HelloWorld{
