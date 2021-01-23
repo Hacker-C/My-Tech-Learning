@@ -26,8 +26,8 @@
 
 ## Java两种核心机制
 
-+ Java 虚拟机
-+ 垃圾收集机制
++ Java 虚拟机（Java Virtual Machine）
++ 垃圾收集机制（Garbage Collection）
 
 ## Java 语言开发环境
 
