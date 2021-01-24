@@ -1,3 +1,7 @@
+body {
+    font-family: "宋体";
+}
+
 .header {
     font-size: 32px;
     font-weight: 400;
@@ -14,7 +18,7 @@
     text-indent: 2em;
     font-size: 12px;
     color: gray;
-}
+}l
 
 a {
     text-decoration: none;
