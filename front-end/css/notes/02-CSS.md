@@ -255,8 +255,43 @@ background-position: x y;
 | length   | 百分数 / 由浮点数字和单位字符组成的长度值              |
 | position | top / center / bottom / left / center / right 方位名词 |
 
-1.参数是方位名词
+**1.参数是方位名词**
 
 - 若两个值都是方位名词，则两个值前后顺序无关，比如`left top`和`top left` 效果一致。
 
 - 若只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐。
+
+**2.参数是精确单位**
+
+- 第一个必定是 x 坐标。第二个是 y 坐标
+- 若只指定一个数值，则另一个必定是 y 轴居中
+
+**3.参数是混合单位**
+
+- 若是混合单位，则第一个值是 x 坐标，第二个值是 y 坐标。
+
+### 4.5 背景图像固定
+
+`background-attachment` 属性设置背景图像是否随着页面其余部分滚动。
+
+`background-attachment` 后期可以制作视差滚动效果。
+
+```css
+background-attachment: scroll | fixed;
+```
+
+| 参数   | 作用                     |
+| ------ | ------------------------ |
+| scroll | 背景图像随着对象内容滚动 |
+| fixed  | 背景图像固定             |
+
+### 4.6 背景属性复合写法
+
+简化代码，将属性写在同一个属性 `background` 下。
+一般按照约定顺序编写。
+
+== background 背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置==
+
+```css
+background: transparent url(image.jpg) repeat-y fixed top;
+```
