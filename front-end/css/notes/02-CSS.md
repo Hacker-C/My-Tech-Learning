@@ -295,3 +295,13 @@ background-attachment: scroll | fixed;
 ```css
 background: transparent url(image.jpg) repeat-y fixed top;
 ```
+
+### 4.7 背景颜色半透明
+
+CSS3 提供 `background: rgba(r,g,b,a)` 属性设置图片透明度。
+
+```css
+background: rgba(0, 0, 0, 0.3);
+```
+
+- CSS3 新增属性，IE9+支持
