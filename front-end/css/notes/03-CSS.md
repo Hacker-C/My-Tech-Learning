@@ -233,3 +233,12 @@ bxo-shadow: h-shadow v-shadow blur spread color inset;
 2. 盒子阴影不占空间，不会影响其他盒子排列
 
 ## 5. 文字阴影
+
+CSS3 中，使用 `text-shadow` 属性设置文本阴影。
+
+| 值       | 描述                           |
+| -------- | ------------------------------ |
+| h-shadow | 必需，水平阴影位置。允许负值。 |
+| v-shadow | 必须，垂直阴影。允许负值。     |
+| blur     | 可选，模糊距离。               |
+| color    | 可选，阴影颜色。               |
