@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 817px;
+            height: 410px;
+            margin: 0 auto;
+        }
+
+        .left {
+            width: 150px;
+            height: 410px;
+            background-color: purple;
+            float: left;
+            margin-right: 6px;
+        }
+
+        .right {
+            float: left;
+            width: 661px;
+            height: 410px;
+            /* background-color: skyblue; */
+        }
+        .right div {
+            height: 200px;
+            width: 160px;
+            background-color: pink;
+            float: left;
+            margin-right: 7px;
+            margin-top: 3px;
+        }
+        .right div:nth-child(4) {
+            margin-right: 0;
+        }
+        .right div:nth-child(8) {
+            margin-right: 0;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">1</div>
+        <div class="right">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </div>
+</body>
+
+</html>
