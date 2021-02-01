@@ -102,7 +102,7 @@ input:focus {
 
 <big>1.`first-child` </big>
 
-`:first-child` 是 CSS 伪类，表示父元素的最后一个子元素。
+`:first-child` 是 CSS 伪类，表示父元素的第一个子元素。
 
 <big>2. `last-child`</big>
 
