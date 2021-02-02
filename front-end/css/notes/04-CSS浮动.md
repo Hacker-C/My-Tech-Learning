@@ -164,3 +164,21 @@ CSS 提供了三种传统布局方式：
 
 + 优点：代码简洁
 + 缺点：无法显示溢出部分
+
+### 3.6 清除浮动——:after 伪元素法
+
+实际上也是额外标签法的一种。
+
+```css
+.clearfix {
+  content: "";
+  display: block;
+  height: 0;
+  clear: 0;
+  visibility: hidden;
+}
+.clearfix {/*IE6、7专有*/
+  *zoom: 1;
+}
+```
+
