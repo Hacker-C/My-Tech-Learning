@@ -174,7 +174,7 @@ CSS 提供了三种传统布局方式：
   content: "";
   display: block;
   height: 0;
-  clear: 0;
+  clear: both;
   visibility: hidden;
 }
 .clearfix {/*IE6、7专有*/
@@ -182,3 +182,24 @@ CSS 提供了三种传统布局方式：
 }
 ```
 
+### 3.7 清除浮动——双伪元素法
+
+语法
+
+```css
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    }
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+```
+
++ 优点：代码更简洁
++ 缺点：照顾低版本浏览器
++ 代表网站：小米、腾讯

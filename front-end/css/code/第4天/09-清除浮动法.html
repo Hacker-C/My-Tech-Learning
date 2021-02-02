@@ -32,12 +32,16 @@
         .clear {
             clear: both;
         }
+        .clearfix::before,
         .clearfix::after {
             content: "";
-            display: block;
-            height: 0;
+            display: table;
+        }
+        .clearfix::after {
             clear: both;
-            visibility: hidden;
+        }
+        .clearfix {
+            *zoom: 1;
         }
     </style>
 </head>
