@@ -1,4 +1,4 @@
-def binnary_search(ls:list, item:int)->int:
+def binary_search(ls:list, item:int)->int:
     low = 0
     high = len(ls) - 1
     while low <= high:
