@@ -1,6 +1,6 @@
-# About My Tech-Learnig
+# README 💬
 
-> 记录技术学习与成长
+> 记录我的技术学习与成长
 
 + Front-End 前端学习
 + Java 语言学习
