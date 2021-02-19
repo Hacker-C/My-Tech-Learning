@@ -1,11 +1,17 @@
 from timeit import timeit
 
-
-def test1():
-    ls = []
-    for i in range(10000):
-        ls.append(i)
+ls1 = list(range(100000))
 
 
-t1 = timeit('test1()', 'from __main__ import test1', number=1)
-print(t1)
+ls2 = list(range(200000))
+
+ls3 = list(range(400000))
+
+print(timeit('ls1.pop()', 'from __main__ import ls1', number=1000))
+print(timeit('ls2.pop()', 'from __main__ import ls2', number=1000))
+print(timeit('ls3.pop()', 'from __main__ import ls3', number=1000))
+
+print('-'*20)
+print(timeit('ls1.pop(0)', 'from __main__ import ls1', number=1000))
+print(timeit('ls2.pop(0)', 'from __main__ import ls2', number=1000))
+print(timeit('ls3.pop(0)', 'from __main__ import ls3', number=1000))
