@@ -54,4 +54,4 @@ def divideByk(num: int, k: int) -> str:
     return ans
 
 
-print(divideByk(123, 8))
+print(divideByk(-123, 8))
