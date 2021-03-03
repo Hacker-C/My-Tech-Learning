@@ -79,4 +79,43 @@ IcoMoon 成立于 2011 年，推出了第一个自定义图标字体生成器，
 
 ## 4. CSS 用户界面样式
 
-###
+### 4.1 鼠标样式 cursor
+
+```css
+cursor: default | pointer | move | text | not-allowed;
+```
+
+### 4.2 取消表单轮廓和文本域缩放
+
+```css
+input {
+  outline: none;
+}
+textarea {
+  outline: none;
+  resize: none;
+}
+```
+
+## 5. vertical-align 的应用
+
+`vertical-align` 指定行内/行内块元素的元素的垂直对齐方式。
+
+### 5.1 图片、表单和文字对齐 vertical-align
+
+```css
+img {
+  vertical-align: middle;
+}
+li {
+  disaplay: inline-block;
+  vertical-align: middle;
+}
+```
+
+## 5.2 解决图片底部默认空白缝隙问题
+
+bug ：图片底侧会有一个空白缝隙，==原因是行内块元素会和文字的基线对齐。==主要解决方法有两种：
+
+1. 给图片添加 `vertical—align: middle topl bottom;` 等。（提倡使用的）
+2. 把图片转换为块级元素 `display: block；`
