@@ -119,3 +119,17 @@ bug ：图片底侧会有一个空白缝隙，==原因是行内块元素会和�
 
 1. 给图片添加 `vertical—align: middle topl bottom;` 等。（提倡使用的）
 2. 把图片转换为块级元素 `display: block；`
+
+## 6. 溢出的文字省略号显示
+
+### 6.1 单行文本溢出显示省略号—必须满足三个条件
+
+```css
+/*1·先强制一行内显示文本*/
+white-space: nowrap;
+默认normal 自动换行）
+/*2·超出的部分隐藏*/
+overflow: hidden;
+/*3.文字用省略号替代超出的部分*/
+text-overflow: ellipsis;
+```
