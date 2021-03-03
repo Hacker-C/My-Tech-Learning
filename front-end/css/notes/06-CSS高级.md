@@ -133,3 +133,23 @@ overflow: hidden;
 /*3.文字用省略号替代超出的部分*/
 text-overflow: ellipsis;
 ```
+
+## 7. margin 负值巧妙利用
+
+1. 解决并排盒子之间的边框宽度加倍问题。
+   原理：让每个盒子压住前面的盒子，边框叠加。
+
+2. 鼠标移动边框颜色变化效果。
+
+```css
+/*如果盒子没有定位，则鼠标经过添加相对定位即可*/
+ul li:hover {
+  position: relative;
+  border: 1px solid orange;
+}
+/*若li都有定位，则使用 z-index 提高层级*/
+ul li {
+  z-index: 1;
+  border: 1px solid orange;
+}
+```
