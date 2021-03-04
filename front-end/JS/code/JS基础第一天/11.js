@@ -1,0 +1,10 @@
+console.log(typeof 1);
+console.log(typeof false);
+console.log(typeof 'aaa');
+console.log(typeof undefined);
+console.log(typeof NaN);
+console.log(typeof Infinity);
+console.log(typeof typeof 1);
+console.log(typeof typeof NaN);
+console.log(typeof typeof true);
+console.log(typeof null);
