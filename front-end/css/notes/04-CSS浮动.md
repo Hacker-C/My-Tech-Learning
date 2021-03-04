@@ -136,8 +136,10 @@ CSS 提供了三种传统布局方式：
 
 ==额外标签法是在最后一个浮动元素末尾添加一个 **空块级元素**，==给其赋以属性 `clear:both;`。
 
-```css
-<style>clear:both;</style>
+```html
+<style>
+  clear: both;
+</style>
 <div class="clear"></div>
 ```
 
