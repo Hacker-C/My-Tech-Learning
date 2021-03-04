@@ -153,3 +153,17 @@ ul li {
   border: 1px solid orange;
 }
 ```
+
+## 8. 文字围绕浮动元素巧妙运用
+
+原理：浮动元素不会遮住文字。
+
+```css
+div {
+  float: left;
+}
+```
+
+## 9. 行内块元素巧妙运用
+
+行内块元素布局当前页码和 `pre`，`next`盒子，使用 `text-align: center` 居中。
