@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.bd {
+    width: 300px;
+    height: 500px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+}
+
+.decration {
+    width: 100%;
+    height: 50px;
+    color: #b7abb3;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.price .now {
+    color: red;
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.price .old {
+    color: #aaaaaa;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+.sold {
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 15px 0 0 10px;
+}
+.bar {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 150px;
+    height: 13px;
+    border: 2px solid red;
+    border-radius: 8px;
+    vertical-align: center;
+}
+
+.bar_in {
+    height: 100%;
+    width: 87%;
+    background-color: red;
+    border-radius: 8px 0 0 8px;
+    transition: width .5s;
+}
+
+.bar:hover .bar_in {
+    width: 100%;
+}
+
+.sold span {
+    color: red;
+}
+
+.buy {
+    display: block;
+    width: 100%;
+    height: 67px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    line-height: 67px;
+    font-size: 20px;
+    transition: all 1s;
+}
+
+a:hover {
+    font-size: 23px;
+}

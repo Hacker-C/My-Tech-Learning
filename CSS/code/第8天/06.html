@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 20px;
+            margin-bottom: 5px;
+        }
+        div[class^=box] {
+            background-color: pink;
+        }
+        div[class$=box] {
+            font-weight: 700;
+        }
+        div[class*=box] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="bd-box">4</div>
+    <div class="nav-box">5</div>
+    <div class="footer-box">6</div>
+    <div class="a-box-b">7</div>
+    <div class="c-box-d">8</div>
+    <div class="e-box-f">9</div>
+</body>
+</html>
